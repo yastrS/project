@@ -1,8 +1,144 @@
+::-webkit-input-placeholder {color: #000;}
+:-moz-placeholder {opacity: 1;color: #000;}
+::-moz-placeholder {opacity: 1;color: #000;}
+:-ms-input-placeholder {color: #000;}
+
+input:focus::-webkit-input-placeholder {opacity: 0;}
+input:focus::-moz-placeholder {opacity: 0;}
+input:focus:-moz-placeholder {opacity: 0;}
+input:focus:-ms-input-placeholder {opacity: 0;}
+
 body {
-  background: #333;
-  border: 2px solid #red;
+  font-family: '', sans-serif;
+  font-weight: 400px;
+}
+#wrapper {
+  min-width: 1220px;
+}
+.main {
+  max-width: 1200px;
+  margin: auto;
 }
 
-p {
-  font-size: 25px;
+input[type=text], textarea {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 77%;
+  border: 0;
+  height: 52px;
+  font-size: 19px;
+  color: #000;
+  font-family: "Century Gothic";
+  padding: 0 3%;
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  height: 49px;
+  line-height: 49px;
+  font-size: 27px;
+  text-align: center;
+  outline-style: none;
+  width: 274px;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+.btn:hover{
+  background: #ffe400;
+  color: #000;
+}
+.btn:active{
+  background: #ffee5b;
+  color: #000;
+}
+
+:before{
+  content: "";
+  display: block;
+  width: 4000px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background: url(../img/.jpg) no-repeat;
+}
+
+
+/* ---MainStyles--- */
+#header-wr{
+  position: fixed;
+}
+
+
+
+
+
+
+
+
+/* ---PopupStyles--- */
+#popup{
+  max-width: 482px;
+  position: relative;
+  width: auto;
+  margin: 20px auto;
+  padding: 20px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  background: #fff;
+  background-size: cover;
+}
+.popup-title{
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  padding-top: 7px;
+  line-height: 43px;
+}
+#popup form{
+  margin-top: 41px;
+  padding-bottom: 33px;
+}
+#popup form input[type=text]{
+  border: 2px solid #000;
+  border-radius: 10px;
+  width: 80%;
+  height: 48px;
+  background: rgba(255,255,255,.6);
+}
+#popup form .btn{
+  margin-top: 15px;
+  width: 86.74%;
+  border-radius: 10px;
+}
+
+
+#thk{
+  max-width: 482px;
+  position: relative;
+  width: auto;
+  margin: 20px auto;
+  padding: 20px 0 35px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #ffe400;
+}
+.thk-title .fz39{
+  padding-top: 9px;
+}
+.thk-title .fz45{
+  font-size: 45px;
+  display: inline-block;
+  padding-bottom: 11px;
+}
+.thk-title .fz22{
+  padding-top: 33px;
+  line-height: 25px;
 }

@@ -51,7 +51,7 @@ table {
   border-spacing: 0; 
 }
 
-input, textarea {
+input[type=text], textarea {
   -webkit-appearance: none;
   outline-style: none; 
 }
@@ -77,7 +77,7 @@ input, textarea {
   display: inline-block;
 }
 
-.fl{
+.fl, .fll{
   float: left;
 }
 
