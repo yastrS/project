@@ -44,17 +44,19 @@ $(document).ready(function() {
   $("input[name=phone]").mask("+375-99-9999999");
 
   $("a[href=#popup]").magnificPopup({
-    "type": 'inline',
-    "mainClass": 'mfp-fade',
-    "overflowY": "scroll",
-    "callbacks": {
-      "open": function() {
+    type: 'inline',
+    midClick: true,
+    overflowY: "scroll",
+    callbacks: {
+      open: function() {
         $(".fix").css("left", "-8.5px");
       },
-      "close": function() {
+      close: function() {
         $(".fix").css("left", "0");
       }
-    }
+    },
+    removalDelay: 300,
+    mainClass: 'mfp-zoom-in'
   });
 
   $("form").submit(function() {
@@ -74,16 +76,18 @@ $(document).ready(function() {
               items: {
                 src: 'thk.html'
               },
-              "mainClass": 'mfp-fade',
-              "overflowY": "scroll",
-              "callbacks": {
-                "open": function() {
+              midClick: true,
+              overflowY: "scroll",
+              callbacks: {
+                open: function() {
                   $(".fix").css("left", "-8.5px");
                 },
-                "close": function() {
+                close: function() {
                   $(".fix").css("left", "0");
                 }
-              }
+              },
+              removalDelay: 300,
+              mainClass: 'mfp-zoom-in'
             });
           }, 500);
         } else {

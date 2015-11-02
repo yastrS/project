@@ -20,57 +20,65 @@ body {
   margin: auto;
 }
 
-input[type=text], textarea {
-  display: inline-block;
-  margin-bottom: 10px;
-  width: 77%;
-  border: 0;
-  height: 52px;
+input[type=text],
+textarea {
+  font-family: '';
   font-size: 19px;
-  color: #000;
-  font-family: "Century Gothic";
+  display: inline-block;
+  width: 77%;
+  height: 52px;
+  margin-bottom: 10px;
   padding: 0 3%;
-  border-radius: 5px;
+  color: #000;
+  border: 0;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
 }
 
 .btn {
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  border: 3px solid #fff;
-  border-radius: 5px;
-  height: 49px;
-  line-height: 49px;
   font-size: 27px;
-  text-align: center;
-  outline-style: none;
+  line-height: 49px;
+  display: inline-block;
   width: 274px;
+  height: 49px;
   cursor: pointer;
-  transition: all .25s ease;
+  -webkit-transition: all .25s ease;
+     -moz-transition: all .25s ease;
+       -o-transition: all .25s ease;
+          transition: all .25s ease;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: 3px solid #fff;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  outline-style: none;
 }
-.btn:hover{
+.btn:hover {
+  color: #000;
   background: #ffe400;
-  color: #000;
 }
-.btn:active{
-  background: #ffee5b;
+.btn:active {
   color: #000;
+  background: #ffee5b;
 }
 
-:before{
-  content: "";
+/*:before {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: block;
   width: 4000px;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0px;
+  content: '';
   background: url(../img/.jpg) no-repeat;
-}
+}*/
 
 
 /* ---MainStyles--- */
-#header-wr{
+#header-wr {
   position: fixed;
 }
 
@@ -82,63 +90,69 @@ input[type=text], textarea {
 
 
 /* ---PopupStyles--- */
-#popup{
-  max-width: 482px;
+#popup {
   position: relative;
   width: auto;
+  max-width: 482px;
   margin: 20px auto;
   padding: 20px;
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
   background: #fff;
-  background-size: cover;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
 }
-.popup-title{
-  text-align: center;
+.popup-title {
   font-size: 45px;
   font-weight: 600;
-  padding-top: 7px;
   line-height: 43px;
+  padding-top: 7px;
+  text-align: center;
 }
-#popup form{
+#popup form {
   margin-top: 41px;
   padding-bottom: 33px;
 }
-#popup form input[type=text]{
-  border: 2px solid #000;
-  border-radius: 10px;
+#popup form input[type=text] {
   width: 80%;
   height: 48px;
+  border: 2px solid #000;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
   background: rgba(255,255,255,.6);
 }
-#popup form .btn{
-  margin-top: 15px;
+#popup form .btn {
   width: 86.74%;
-  border-radius: 10px;
+  margin-top: 15px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
 }
 
 
-#thk{
-  max-width: 482px;
+#thk {
   position: relative;
   width: auto;
+  max-width: 482px;
   margin: 20px auto;
   padding: 20px 0 35px;
   -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
   background: #ffe400;
 }
-.thk-title .fz39{
+.thk-title .fz39 {
   padding-top: 9px;
 }
-.thk-title .fz45{
+.thk-title .fz45 {
   font-size: 45px;
   display: inline-block;
   padding-bottom: 11px;
 }
-.thk-title .fz22{
-  padding-top: 33px;
+.thk-title .fz22 {
   line-height: 25px;
+  padding-top: 33px;
 }
