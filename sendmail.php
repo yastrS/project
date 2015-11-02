@@ -1,6 +1,6 @@
 <?php
 
-$to = "yastr.s@ya.ru";
+$to = "";
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
